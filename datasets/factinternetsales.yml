@@ -8,13 +8,6 @@ columns:
   - name: Calculated Tax
     data_type: double
     sql: salesamount*0.085
-    dialects:
-      - dialect: Snowflake
-        sql: '"salesamount"*0.085'
-      - dialect: Oracle
-        sql: '"salesamount"*0.085'
-      - dialect: Db2
-        sql: '"salesamount"*0.085'
   - name: currencykey
     data_type: int
   - name: customerkey
