@@ -1,8 +1,6 @@
 unique_name: BigQuery
-label: BigQuery
 object_type: connection
-as_connection: BigQuery
-db_type: bigquery
-database: atscale-data-warehouse
-schema: Demo
-override: true
+label: BigQuery
+as_connection: Postgres
+database: atscale_data
+schema: atscale_data
