@@ -1,0 +1,4 @@
+unique_name: X
+object_type: metric_calc
+label: X
+expression: "([Order Date Dimension].[Order Day_Date].CurrentMember,[Measures].[salesamount1])"

@@ -5,18 +5,18 @@ visible: true
 
 relationships:
 
-  - unique_name: factinternetsales_Customer_Dimension
+  - unique_name: factinternetsales.dataset_Customer_Dimension
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - customerkey
     to:
       dimension: Customer Dimension
       level: Customer Name
 
-  - unique_name: factinternetsales_Date_Dimension_Order
+  - unique_name: factinternetsales.dataset_Date_Dimension_Order
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - orderdatekey
     to:
@@ -24,9 +24,9 @@ relationships:
       level: Reporting_Day
     role_play: "Order {0}"
 
-  - unique_name: factinternetsales_Date_Dimension_Ship
+  - unique_name: factinternetsales.dataset_Date_Dimension_Ship
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - shipdatekey
     to:
@@ -34,9 +34,9 @@ relationships:
       level: Reporting_Day
     role_play: "Ship {0}"
 
-  - unique_name: factinternetsales_Order_Dimension
+  - unique_name: factinternetsales.dataset_Order_Dimension
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - salesorderlinenumber
         - salesordernumber
@@ -45,18 +45,18 @@ relationships:
       dimension: Order Dimension
       level: order_line_item
 
-  - unique_name: factinternetsales_Product_Dimension
+  - unique_name: factinternetsales.dataset_Product_Dimension
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - productkey
     to:
       dimension: Product Dimension
       level: Product Name
 
-  - unique_name: factinternetsales_Date_Dimension_Order_1
+  - unique_name: factinternetsales.dataset_Date_Dimension_Order_1
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - orderdatekey
     to:
@@ -64,9 +64,9 @@ relationships:
       level: DayMonth
     role_play: "Order {0}"
 
-  - unique_name: factinternetsales_Date_Dimension_Ship_1
+  - unique_name: factinternetsales.dataset_Date_Dimension_Ship_1
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - shipdatekey
     to:
@@ -74,9 +74,9 @@ relationships:
       level: DayMonth
     role_play: "Ship {0}"
 
-  - unique_name: factinternetsales_Date_Dimension_Order_2
+  - unique_name: factinternetsales.dataset_Date_Dimension_Order_2
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - orderdatekey
     to:
@@ -84,9 +84,9 @@ relationships:
       level: customday
     role_play: "Order {0}"
 
-  - unique_name: factinternetsales_Date_Dimension_Ship_2
+  - unique_name: factinternetsales.dataset_Date_Dimension_Ship_2
     from:
-      dataset: factinternetsales
+      dataset: factinternetsales.dataset
       join_columns:
         - shipdatekey
     to:
@@ -228,7 +228,7 @@ metrics:
   - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: ECCO Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYearGrow
     folder: Time Relative
 
   - unique_name: Estimated Customer Count-Order Retail445-30PrdMvLowerBand
@@ -282,7 +282,7 @@ metrics:
   - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: LPUPO Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowt
     folder: Time Relative
 
   - unique_name: Last Product Unit Price-Order Retail445-30PrdMvLowerBand
@@ -536,6 +536,14 @@ metrics:
 
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
+
+  - unique_name: T1
+
+  - unique_name: T2
+
+  - unique_name: Total
+
+  - unique_name: X
 
 drillthroughs:
 

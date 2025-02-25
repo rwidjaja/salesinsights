@@ -1,7 +1,7 @@
-unique_name: DateCustom
+unique_name: DateCustom.dataset
 object_type: dataset
 label: DateCustom
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: datecustom
 
 columns:

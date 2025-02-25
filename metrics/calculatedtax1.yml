@@ -3,5 +3,5 @@ object_type: metric
 label: Calculated Tax
 calculation_method: sum
 format: "$#,##0.00"
-dataset: factinternetsales
+dataset: factinternetsales.dataset
 column: Calculated Tax

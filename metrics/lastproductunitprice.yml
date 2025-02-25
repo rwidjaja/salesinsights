@@ -6,6 +6,6 @@ format: "$#,##0.00"
 semi_additive:
   position: last
   relationships:
-    - factinternetsales_Product_Dimension
-dataset: factinternetsales
+    - factinternetsales.dataset_Product_Dimension
+dataset: factinternetsales.dataset
 column: unitprice

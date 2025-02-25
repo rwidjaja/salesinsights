@@ -1,0 +1,6 @@
+unique_name: T1
+object_type: metric_calc
+label: T1
+expression: "CASE \n    WHEN ISEMPTY([Measures].[customercountestimate1]) \n    THEN\
+  \ NULL\n    ELSE \n        SUM(\n            [Order Date Dimension].[Order Retail445].CurrentMember.Parent.Children,\
+  \ \n            [Measures].[customercountestimate1]\n        )\nEND"

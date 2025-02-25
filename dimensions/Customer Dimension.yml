@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Customer Hierarchy
     label: Customer Hierarchy
+    filter_empty: "no"
     folder: Customer Attributes
 
     levels:
@@ -18,14 +19,14 @@ hierarchies:
 
           - unique_name: d_firstname
             label: First Name
-            dataset: dimcustomer
+            dataset: dimcustomer.dataset
             key_columns:
               - firstname
             name_column: firstname
 
           - unique_name: d_lastname
             label: Last Name
-            dataset: dimcustomer
+            dataset: dimcustomer.dataset
             key_columns:
               - lastname
             name_column: lastname
@@ -33,7 +34,7 @@ hierarchies:
           - unique_name: Occupation
             label: Occupation
             folder: Customer Attributes
-            dataset: dimcustomer
+            dataset: dimcustomer.dataset
             key_columns:
               - occupation
             name_column: occupation
@@ -44,7 +45,7 @@ level_attributes:
     label: Customer Name
     description: Customer Key
     is_unique_key: true
-    dataset: dimcustomer
+    dataset: dimcustomer.dataset
     key_columns:
       - customerkey
     name_column: fullname
@@ -55,7 +56,7 @@ relationships:
     from:
       hierarchy: Customer Hierarchy
       level: Customer Name
-      dataset: dimcustomer
+      dataset: dimcustomer.dataset
       join_columns:
         - geographykey
     to:
@@ -67,7 +68,7 @@ relationships:
     from:
       hierarchy: Customer Hierarchy
       level: Customer Name
-      dataset: dimcustomer
+      dataset: dimcustomer.dataset
       join_columns:
         - geographykey
     to:
@@ -79,10 +80,14 @@ relationships:
     from:
       hierarchy: Customer Hierarchy
       level: Customer Name
-      dataset: dimcustomer
+      dataset: dimcustomer.dataset
       join_columns:
         - gender
     to:
       dimension: Gender Dimension
       level: Gender
     type: embedded
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

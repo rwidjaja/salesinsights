@@ -1,7 +1,7 @@
-unique_name: dim_geo_state
+unique_name: dim_geo_state.dataset
 object_type: dataset
 label: dim_geo_state
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: dim_geo_state
 
 columns:

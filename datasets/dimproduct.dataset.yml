@@ -1,7 +1,7 @@
-unique_name: dimproduct
+unique_name: dimproduct.dataset
 object_type: dataset
 label: dimproduct
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: dimproduct
 
 columns:

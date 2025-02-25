@@ -1,0 +1,4 @@
+unique_name: Total
+object_type: metric_calc
+label: Total
+expression: "([Order Date Dimension].[Order Retail445].[All],[Measures].[customercountestimate1])"

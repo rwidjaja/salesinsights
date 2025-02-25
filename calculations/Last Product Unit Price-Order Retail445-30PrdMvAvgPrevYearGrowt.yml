@@ -1,0 +1,7 @@
+unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowt
+object_type: metric_calc
+label: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "[Measures].[Last Product Unit Price-Order Retail445-30PrdMvAvg] + [Measures].[Last\
+  \ Product Unit Price-Order Retail445-30PrdMvStdev]"
+format: percent

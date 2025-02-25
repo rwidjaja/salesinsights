@@ -1,0 +1,7 @@
+unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYearGrow
+object_type: metric_calc
+label: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "[Measures].[Estimated Customer Count-Order Retail445-30PrdMvAvg] + [Measures].[Estimated\
+  \ Customer Count-Order Retail445-30PrdMvStdev]"
+format: percent
