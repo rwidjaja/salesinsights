@@ -1,6 +1,6 @@
 unique_name: Postgres14.connection
 label: Postgres14
 object_type: connection
-as_connection: Postgres14
-database: <YOUR DATABASE>
+as_connection: postgres
+database: atscale_data
 schema: SalesInsights
