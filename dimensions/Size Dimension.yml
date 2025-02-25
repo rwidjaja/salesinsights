@@ -18,7 +18,11 @@ level_attributes:
 
   - unique_name: Size
     label: Size
-    dataset: factinternetsales
+    dataset: factinternetsales.dataset
     key_columns:
       - size
     name_column: size
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

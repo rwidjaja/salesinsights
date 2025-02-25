@@ -1,7 +1,7 @@
-unique_name: dimcustomer
+unique_name: dimcustomer.dataset
 object_type: dataset
 label: dimcustomer
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: dimcustomer
 
 columns:

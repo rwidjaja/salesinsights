@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Color
     label: Color
+    filter_empty: "yes"
     folder: Product Attributes
 
     levels:
@@ -19,7 +20,11 @@ level_attributes:
   - unique_name: Color
     label: Color
     description: Product Color
-    dataset: factinternetsales
+    dataset: factinternetsales.dataset
     key_columns:
       - color
     name_column: color
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -4,5 +4,5 @@ label: SoldProductNDC
 description: Sold Product Non-Distinct Count
 calculation_method: count non-null
 format: general number
-dataset: factinternetsales
+dataset: factinternetsales.dataset
 column: productkey

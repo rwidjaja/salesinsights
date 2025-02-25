@@ -22,7 +22,7 @@ hierarchies:
           - unique_name: typeorder
             label: Order Type
             folder: Orders
-            dataset: dimorder
+            dataset: dimorder.dataset
             key_columns:
               - type
             name_column: type
@@ -32,14 +32,14 @@ level_attributes:
 
   - unique_name: currency
     label: Currency
-    dataset: dimorder
+    dataset: dimorder.dataset
     key_columns:
       - currencykey
     name_column: currency_name
 
   - unique_name: order
     label: Order
-    dataset: dimorder
+    dataset: dimorder.dataset
     key_columns:
       - salesordernumber
       - currencykey
@@ -49,7 +49,7 @@ level_attributes:
     label: Order Line Item
     description: Order Line Item
     is_unique_key: true
-    dataset: dimorder
+    dataset: dimorder.dataset
     key_columns:
       - salesorderlinenumber
       - salesordernumber

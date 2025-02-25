@@ -18,7 +18,11 @@ level_attributes:
 
   - unique_name: Weight
     label: Weight
-    dataset: factinternetsales
+    dataset: factinternetsales.dataset
     key_columns:
       - weight
     name_column: weight
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

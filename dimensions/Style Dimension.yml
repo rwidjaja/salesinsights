@@ -19,7 +19,11 @@ level_attributes:
   - unique_name: Style
     label: Style
     description: Product Style
-    dataset: factinternetsales
+    dataset: factinternetsales.dataset
     key_columns:
       - style
     name_column: style
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

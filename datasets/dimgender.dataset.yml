@@ -1,7 +1,7 @@
-unique_name: dimgender
+unique_name: dimgender.dataset
 object_type: dataset
 label: dimgender
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: dimgender
 
 columns:

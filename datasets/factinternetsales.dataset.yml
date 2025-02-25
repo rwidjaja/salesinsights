@@ -1,13 +1,20 @@
-unique_name: factinternetsales
+unique_name: factinternetsales.dataset
 object_type: dataset
 label: factinternetsales
-connection_id: BigQuery
+connection_id: Postgres14.connection
 table: factinternetsales
 
 columns:
   - name: Calculated Tax
     data_type: double
     sql: salesamount*0.085
+    dialects:
+      - dialect: Snowflake
+        sql: '"salesamount"*0.085'
+      - dialect: Oracle
+        sql: '"salesamount"*0.085'
+      - dialect: Db2
+        sql: '"salesamount"*0.085'
   - name: currencykey
     data_type: int
   - name: customerkey

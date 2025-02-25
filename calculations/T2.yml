@@ -1,0 +1,7 @@
+unique_name: T2
+object_type: metric_calc
+label: T2
+expression: "    SUM(\n        DESCENDANTS(\n            [Order Date Dimension].[Order\
+  \ Retail445].CurrentMember, \n            [Order Date Dimension].[Order Retail445].[Order\
+  \ ReportIng_Quarter], \n            SELF\n        ), \n        [Measures].[customercountestimate1]\n\
+  \    )"
