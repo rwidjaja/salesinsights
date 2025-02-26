@@ -602,7 +602,7 @@ calculation_groups:
         use_input_metric_format: true
 
       - unique_name: CustomPP445 Last Year
-        expression: "(ParallelPeriod([Date Dimension].[Retail445].[customyear],\
+        expression: "(ParallelPeriod([Date Dimension].[Retail445].[ReportIng_Year],\
           \ 1, [Date Dimension].[Retail445].CurrentMember), [Measures].currentMember)"
         format: standard
         use_input_metric_format: true
