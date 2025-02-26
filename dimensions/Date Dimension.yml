@@ -602,8 +602,8 @@ calculation_groups:
         use_input_metric_format: true
 
       - unique_name: CustomPP445 Last Year
-        expression: "(ParallelPeriod([Date Dimension].[CustomPP445].[customyear],\
-          \ 1, [Date Dimension].[CustomPP445].CurrentMember), [Measures].currentMember)"
+        expression: "(ParallelPeriod([Date Dimension].[Retail445].[customyear],\
+          \ 1, [Date Dimension].[Retail445].CurrentMember), [Measures].currentMember)"
         format: standard
         use_input_metric_format: true
 
@@ -643,9 +643,9 @@ calculation_groups:
         use_input_metric_format: true
 
       - unique_name: Retail445-Test
-        expression: "Aggregate(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order\
-          \ ReportIng_Year], ParallelPeriod([Order Date Dimension].[Order Retail445].[Order\
-          \ ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember)),\
+        expression: "Aggregate(\nPeriodsToDate([Date Dimension].[Retail445].[Order\
+          \ ReportIng_Year], ParallelPeriod([Date Dimension].[Retail445].[Order\
+          \ ReportIng_Year], 1, [Date Dimension].[Retail445].CurrentMember)),\
           \ \n[Measures].currentMember)"
         format: general number
 
