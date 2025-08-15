@@ -1,0 +1,6 @@
+version: 1
+packages:
+  - name: shared
+    url: https://github.com/rwidjaja/hormel/
+    branch: main
+    version: 'commit:ecc12108f129a0094977003012a07d8697a9bc29'
