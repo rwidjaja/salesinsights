@@ -150,7 +150,7 @@ columns:
   - name: rpt_quarter
     data_type: datetime
   - name: rpt_quarter_lykey
-    data_type: datetime
+    data_type: string
   - name: rpt_quarter_name
     data_type: string
   - name: rpt_quarter_of_half_year

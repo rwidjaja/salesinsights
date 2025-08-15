@@ -281,7 +281,7 @@ hierarchies:
           - level: customyear
             key_columns:
               - name: rpt_quarter_lykey
-                data_type: datetime
+                data_type: string
 
         secondary_attributes:
 
@@ -299,7 +299,7 @@ hierarchies:
           - level: customyear
             key_columns:
               - name: rpt_month_lykey
-                data_type: datetime
+                data_type: string
 
         secondary_attributes:
 
@@ -335,7 +335,7 @@ hierarchies:
           - level: customyear
             key_columns:
               - name: rpt_week_lykey
-                data_type: datetime
+                data_type: string
 
         secondary_attributes:
 
@@ -362,7 +362,7 @@ hierarchies:
           - level: customyear
             key_columns:
               - name: rpt_day_lykey
-                data_type: datetime
+                data_type: string
 
         secondary_attributes:
 
