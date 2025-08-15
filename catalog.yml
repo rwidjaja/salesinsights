@@ -1,6 +1,6 @@
 unique_name: Sales Insights - Postgres.catalog
 object_type: catalog
 label: Sales Insights - Postgres
-version: 1.0
+version: 1.2
 aggressive_agg_promotion: false
 build_speculative_aggs: false

@@ -277,11 +277,6 @@ hierarchies:
       - unique_name: customyear
 
       - unique_name: customquarter
-        parallel_periods:
-          - level: customyear
-            key_columns:
-              - name: rpt_quarter_lykey
-                data_type: string
 
         secondary_attributes:
 
@@ -295,11 +290,6 @@ hierarchies:
             sort_column: rpt_quarter_of_year_name
 
       - unique_name: custommonth
-        parallel_periods:
-          - level: customyear
-            key_columns:
-              - name: rpt_month_lykey
-                data_type: string
 
         secondary_attributes:
 
@@ -331,11 +321,6 @@ hierarchies:
             sort_column: rpt_month_of_year_name
 
       - unique_name: customweek
-        parallel_periods:
-          - level: customyear
-            key_columns:
-              - name: rpt_week_lykey
-                data_type: string
 
         secondary_attributes:
 
@@ -358,11 +343,6 @@ hierarchies:
             sort_column: rpt_week_of_year_name
 
       - unique_name: customday
-        parallel_periods:
-          - level: customyear
-            key_columns:
-              - name: rpt_day_lykey
-                data_type: string
 
         secondary_attributes:
 
