@@ -1,0 +1,6 @@
+unique_name: Postgres14
+object_type: connection
+as_connection: ${CONNECTION}
+label: ${LABEL}
+database: ${DB_NAME}
+schema: ${DB_SCHEMA}
