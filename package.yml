@@ -1,6 +1,6 @@
 version: 1
 packages:
-  - version: commit:add1a340a4e64537d7710018eba4da9491aaa013
+  - version: commit:037fe48ad071c34f455f1be54dbf03ffcf14de1d
     name: shared
     url: https://github.com/rwidjaja/hormel/
     branch: main
